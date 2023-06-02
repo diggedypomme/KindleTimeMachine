@@ -4,10 +4,14 @@
 echo "pre:"
 
 # Find the PIDs of processes running "mayclock.sh"
-pgrep -f mayclock.sh
+pids=$(pgrep -f mayclock.sh)
+echo "$pids"
 
-# Script execution
-# Add your desired commands or actions here
+# Kill the processes
+echo "Killing the processes..."
+for pid in $pids; do
+  kill "$pid"
+done
 
 # Post-section
 echo "post:"
