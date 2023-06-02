@@ -1,7 +1,6 @@
 subfolder_path = r'E:\every_minute\generated\2023-06-01-anteater'
 
 
-
 import os
 from wand.image import Image
 
@@ -18,7 +17,9 @@ def convert_and_rename_images(folder_path):
     # Convert and rename the images
     for i, png_file in enumerate(png_files):
         input_path = os.path.join(folder_path, png_file)
-        output_file = f"{i:04d}.jpg"
+        hour = i // 60
+        minute = i % 60
+        output_file = f"{hour:02d}{minute:02d}.jpg"
         output_path = os.path.join(output_folder, output_file)
 
         # Convert PNG to 8-bit grayscale with dithering and save as JPEG
@@ -33,6 +34,6 @@ def convert_and_rename_images(folder_path):
 
     print("Conversion and renaming completed!")
 
-
+# Example usage
 
 convert_and_rename_images(subfolder_path)
