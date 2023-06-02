@@ -1,0 +1,2 @@
+start in background
+sh mayclock.sh > /dev/null 2>&1 &
