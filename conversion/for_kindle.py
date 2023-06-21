@@ -1,0 +1,39 @@
+subfolder_path = r'E:\every_minute\generated\dragons'
+#offset= 20 * 60 + 28
+offset=0
+import os
+from wand.image import Image
+
+def convert_and_rename_images(folder_path):
+    # Create subfolder for converted and renamed images
+    output_folder = os.path.join(folder_path, 'completed')
+    os.makedirs(output_folder, exist_ok=True)
+
+    # Get all PNG files in the subfolder
+    png_files = [file for file in os.listdir(folder_path) if file.lower().endswith('.png')]
+
+    print(f"Found {len(png_files)} PNG file(s) in the subfolder.")
+
+    # Convert and rename the images
+    for i, png_file in enumerate(png_files):
+        input_path = os.path.join(folder_path, png_file)
+        hour = (i + offset) // 60
+        minute = (i+offset) % 60
+        output_file = f"{hour:02d}{minute:02d}.jpg"
+        output_path = os.path.join(output_folder, output_file)
+
+        # Convert PNG to 8-bit grayscale with dithering and save as JPEG
+        with Image(filename=input_path) as img:
+            img.transform_colorspace('gray')
+            img.depth = 8
+            img.ordered_dither('o8x8', 8)
+            img.format = 'jpeg'
+            img.save(filename=output_path)
+
+        print(f"Converted and renamed: {png_file} -> {output_file}")
+
+    print("Conversion and renaming completed!")
+
+# Example usage
+
+convert_and_rename_images(subfolder_path)
