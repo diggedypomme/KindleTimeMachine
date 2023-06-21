@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #clock {
+      font-size: 48px;
+      font-weight: bold;
+color:#b9b6b6;
+text-align: center;
+      font-family: "Helvetica Neue", Arial, sans-serif; /* Replace with your desired font */
+    }
+    #clockImage {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .time-control {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .time-control button {
+      flex-basis: calc(50% - 10px);
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .time-control button:hover {
+      background-color: #45a049;
+    }
+
+    .toggle-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .toggle-container label {
+      margin-right: 10px;
+    }
+
+    .toggle-container .slider {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      background-color: #ccc;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .toggle-container .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .toggle-container input[type="checkbox"] {
+      display: none;
+    }
+
+    .toggle-container input[type="checkbox"]:checked + .slider {
+      background-color: #4CAF50;
+    }
+
+    .toggle-container input[type="checkbox"]:checked + .slider:before {
+      transform: translateX(20px);
+    }
+
+    @media (max-width: 480px) {
+      #container {
+        padding: 10px;
+      }
+
+      .time-control {
+        flex-wrap: wrap;
+      }
+
+      .time-control button {
+        flex-basis: calc(50% - 5px);
+      }
+    }
+  </style>
+
+
+ <script>
+    var clockFaces = [
+{ name: "Tentacle", path: "tentacle" },
+{  name: "Flowers", path: "flowers" },
+{ name: "Clockwork", path: "clockwork"},
+{  name: "Bones", path: "bones" },  
+
+{  name: "Fancy Clocks", path: "fancy" },   
+{  name: "Bees", path: "bees" },  
+
+
+{  name: "Snakes", path: "snakes" },
+{  name: "Parrots", path: "parrots" },
+{  name: "Anteaters", path: "anteaters" },
+{  name: "Mushrooms", path: "mushrooms" },
+{  name: "Dragons", path: "dragons" },
+
+
+    ];
+
+    var syncTimer = null;
+    var syncEnabled = false;
+
+    function updateTime(minutes) {
+      var timeField = document.getElementById('time');
+      var currentTime = timeField.value;
+      var parts = currentTime.split(':');
+      var hours = parseInt(parts[0]);
+      var mins = parseInt(parts[1]);
+
+      // Add or subtract the minutes
+      mins += minutes;
+
+      // Handle minute overflow and underflow
+      if (mins >= 60) {
+        hours += Math.floor(mins / 60);
+        mins = mins % 60;
+      } else if (mins < 0) {
+        hours -= Math.ceil(Math.abs(mins) / 60);
+        mins = 60 - (Math.abs(mins) % 60);
+      }
+
+      // Format the time string
+      hours = (hours < 10) ? '0' + hours : hours;
+      mins = (mins < 10) ? '0' + mins : mins;
+      var timeString = hours + ':' + mins;
+
+      // Update the clock display and the time field
+      document.getElementById('clock').textContent = timeString;
+      timeField.value = timeString;
+
+      // Update the clock face image
+      var selectedClockFace = document.getElementById('clockFace').value;
+
+
+      if (document.getElementById("kindleformat").checked==false){
+      var colourstyle="_jpg"
+      }
+      else{var colourstyle=""}
+
+      var imageSrc = clockFaces[selectedClockFace].path + colourstyle+'/' + timeString.replace(':', '') + '.jpg';
+      document.getElementById('clockImage').src = imageSrc;
+    }
+
+    function syncToCurrentTime() {
+      var currentTime = new Date();
+      var hours = currentTime.getHours().toString().padStart(2, '0');
+      var mins = currentTime.getMinutes().toString().padStart(2, '0');
+      var timeString = hours + ':' + mins;
+      document.getElementById('time').value = timeString;
+      updateTime(0);
+    }
+
+    function toggleSync() {
+      syncEnabled = !syncEnabled;
+      if (syncEnabled) {
+        syncTimer = setInterval(syncToCurrentTime, 1000); // Update every second
+      } else {
+        clearInterval(syncTimer);
+      }
+    }
+
+ toggleSync() 
+  </script>
+</head>
+<body>
+
+  <div id="container">
+    <div id="clock"></div>
+    <img id="clockImage" src="tentacle/0000.jpg">
+
+    <div class="time-control">
+      <button onclick='updateTime(-1);document.getElementById("syncToggle").checked=false;clearInterval(syncTimer);syncEnabled=false'>Back</button>
+      <button onclick='updateTime(1);document.getElementById("syncToggle").checked=false;clearInterval(syncTimer);syncEnabled=false'>Forward</button>
+    </div>
+
+    <div class="time-control">
+      <input type="time" id="time" value="00:00" onchange="updateTime(0)">
+
+<div class="toggle-container">
+  <label for="syncToggle" title="This will set it to black and white and the correct format for displaying with eips">Kindle format</label>
+  <label class="switch">
+    <input type="checkbox" id="kindleformat" onchange="updateTime(0)">
+    <span class="slider"></span>
+  </label>
+</div>
+
+
+
+<select id="clockFace" onchange="updateTime(0)" title="Choose a clock face">
+
+<optgroup label="Favourite">
+  <option value="0">Tentacle</option>
+<option value="1">Flowers</option>
+<option value="9">Mushrooms</option>
+
+  <option value="2">Clockwork</option>
+  <option value="3">Bones</option>
+<option value="4">Fancy clocks</option>
+
+
+</optgroup>
+ <optgroup label="Mid">
+<option value="10">Dragons</option>
+  <option value="5">Bees</option>
+ 
+    
+  
+ 
+  </optgroup>
+
+  <optgroup label="Wonky">
+    <option value="6">Snakes</option>
+  <option value="7">Parrots</option>
+    <option value="8">Anteaters</option>
+  </optgroup>
+
+
+
+</select>
+
+
+
+    </div>
+
+    <div class="time-control">
+      <button onclick="syncToCurrentTime()" title="Reset the time to current if you have been messing with it">Set to Current Time</button>
+      <div class="toggle-container">
+        <label for="syncToggle" title="This will change automatically to match the time. Disable it if you want to flick through the images">Sync with time</label>
+        <label class="switch">
+          <input type="checkbox" id="syncToggle" checked onchange="toggleSync()">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </div></body>
+</html>
