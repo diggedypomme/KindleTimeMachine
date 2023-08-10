@@ -29,11 +29,10 @@ Contributions to KindleTimeMachine are welcome! If you have any ideas, bug fixes
 
 ## Acknowledgements
 
-- The clock face generation algorithm in this project is inspired by the stable diffusion image AI technique developed by [DiffiSION Labs](https://diffisionlabs.com/).
 - Special thanks to the open-source community for their contributions and support.
 
 ## Contact
 
-If you have any questions, suggestions, or feedback, please feel free to reach out to us at kindletimemachine@example.com.
+
 
 Happy clock-watching on your Kindle!
