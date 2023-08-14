@@ -17,10 +17,11 @@ In the "kindle" folder there are 4 files.
 - start_in_background . command for running this in the background
 - killclock           . A script to kill a background process of the clock to stop it
 
-You will need to update the path to match the clock name, so like 
+You will need to update the path to match the clock name, so:
 
 in mayclock.sh:
     image_dir="/mnt/us/mayclock/anteaters"
+
 
 in simple_eips.sh :
     anteaters/1224.jpg or anteaters/1224.jpg
