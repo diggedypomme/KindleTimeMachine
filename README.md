@@ -97,6 +97,8 @@ I have some scripts to upload which will handle the conversion and renaming of t
 Copies of 7zips of each of the clocks can be found here:
 
 ## 7zips of the clockfaces
+These can be previewed here: https://diggedypomme.com/clockfaces/
+
 - [Tentacles (Kindle Version)](https://superpomme.co.uk/clockfaces/tentacles.7z)
 - [Tentacles Jpg (Colour Version)](https://superpomme.co.uk/clockfaces/tentacles_jpg.7z)
 - [Mushrooms (Kindle Version)](https://superpomme.co.uk/clockfaces/mushrooms.7z)
