@@ -119,3 +119,5 @@ These can be previewed here: https://diggedypomme.com/clockfaces/
 - [Snakes Jpg (Colour Version)](https://superpomme.co.uk/clockfaces/snakes_jpg.7z)
 - [Anteaters (Kindle Version)](https://superpomme.co.uk/clockfaces/anteaters.7z)
 
+# Kindlefusion interaction
+These clocks can be started and stopped via kindlefusion, but I just need to rewrite some code as I did it directly on a kindle on holiday before giving as a gift
