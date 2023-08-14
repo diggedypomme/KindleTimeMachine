@@ -5,7 +5,7 @@ The KindleTimeMachine is a set of ai generated clockfaces with a script to run t
 The clockfaces that I generated so far can be found here:https://diggedypomme.com/clockfaces/, and some examples can be seen here
 
 
-
+![Kindle Time Machine](info/kindle_time_machine%20(11).jpg)
 
 ## Installation of the script
 
