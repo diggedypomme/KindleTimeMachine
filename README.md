@@ -1,15 +1,13 @@
 # KindleTimeMachine
 
-KindleTimeMachine is a unique clock face loader designed for Kindle devices, enabling users to enjoy a variety of captivating clock faces generated using stable diffusion image AI. With this repository, you can easily transform your Kindle into a versatile timekeeping device, offering a delightful visual experience while reading.
+The KindleTimeMachine is a set of ai generated clockfaces with a script to run them on a Kindle. This is created to go alongside my Kindlefusion project here: https://github.com/diggedypomme/Kindlefusion but can also be run standalone. I have generated an image for every minute of the day, and the clock displays this sequentially. The images were made with stable diffusion 2.1 base model, with depth controlnet, and I will go into the settings below.
 
-## Features
+The clockfaces that I generated so far can be found here:https://diggedypomme.com/clockfaces/, and a could of examples can be seen here
 
-- **Clock Face Loader:** KindleTimeMachine acts as a loader for various clock faces, allowing you to customize the appearance of your Kindle's display.
-- **Generated Clock Faces:** The clock faces are generated using stable diffusion image AI, resulting in mesmerizing and unique designs.
-- **Easy Installation:** The installation process is straightforward and user-friendly, ensuring a hassle-free setup on your Kindle device.
-- **Seamless Integration:** KindleTimeMachine integrates seamlessly with the Kindle interface, providing a smooth and immersive reading experience.
 
-## Installation
+
+
+## Installation of the script
 
 Follow these steps to install and configure KindleTimeMachine on your Kindle device:
 
@@ -22,14 +20,11 @@ Follow these steps to install and configure KindleTimeMachine on your Kindle dev
 7. Choose the desired clock face from the available options.
 8. Enjoy the new clock face on your Kindle!
 
-## Contributing
-
-Contributions to KindleTimeMachine are welcome! If you have any ideas, bug fixes, or feature enhancements, please submit a pull request. Make sure to follow the existing code style and provide detailed information about your changes.
 
 
 ## Acknowledgements
 
-- Special thanks to the open-source community for their contributions and support.
+
 
 ## Contact
 
