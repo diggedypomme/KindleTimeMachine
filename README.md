@@ -7,7 +7,7 @@ The KindleTimeMachine is a set of ai generated clockfaces with a script to run t
 
 The clockfaces that I generated so far can be previewed here: https://diggedypomme.com/clockfaces/, with mixed success. I think my favourite one is the tentacle one. The html for the preview is in the preview folder.
 
-The kindle works best with converted black and white images, so I will include a link to a zip for each clock face, and will try and share the colour ones too in case they are useful for someone
+The kindle works best with converted black and white images, so I have included zips of the coloured and Kindle converted formats depending what you want it for. These are down at the bottom of this page and are between 100 and 300 meg per zip.
 
 
 ![Kindle Time Machine](info/kindle_time_machine%20(11).jpg)
