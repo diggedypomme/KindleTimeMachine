@@ -1,6 +1,6 @@
 # KindleTimeMachine
 
-The KindleTimeMachine is a set of ai generated clockfaces with a script to run them on a Kindle. This is created to go alongside my Kindlefusion project here: https://github.com/diggedypomme/Kindlefusion but can also be run standalone. I have generated an image for every minute of the day, and the clock displays this sequentially. The images were made with stable diffusion 2.1 base model, with depth controlnet, and I will go into the settings below.These were made in early June but I haven't got round to updating this.
+The KindleTimeMachine is a set of ai generated clockfaces with a script to run them on a Kindle. This is created to go alongside my Kindlefusion project here: https://github.com/diggedypomme/Kindlefusion but can also be run standalone. I have generated an image for every minute of the day, and the clock displays this sequentially. The images were made with stable diffusion 2.1 base model, with depth controlnet, and I will go into the settings below.These were made in May 2023, but I am just getting round to documenting. I haven't yet used it with the XL model but will give that a play.
 
 The clockfaces that I generated so far can be previewed here: https://diggedypomme.com/clockfaces/, with mixed success. I think my favourite one is the tentacle one. The html for the preview is in the preview folder.
 
@@ -20,11 +20,11 @@ In the "kindle" folder there are 4 files.
 You will need to update the path to match the clock name, so:
 
 in mayclock.sh:
-    image_dir="/mnt/us/mayclock/anteaters"
+image_dir="/mnt/us/mayclock/anteaters"
 
 
 in simple_eips.sh :
-    anteaters/1224.jpg or anteaters/1224.jpg
+anteaters/1224.jpg or anteaters/1224.jpg
 
 ## Stable diffusion
 
