@@ -122,3 +122,9 @@ These can be previewed here: https://diggedypomme.com/clockfaces/
 
 # Kindlefusion interaction
 These clocks can be started and stopped via kindlefusion, but I just need to rewrite some code as I did it directly on a kindle on holiday before giving as a gift
+
+# To do
+- redo or find the kindlefusion interaction
+- add arguments for loading the different faces
+- sort and upload the conversion scripts
+- update the clockface preview with a link to the github and a download button for each clockface
