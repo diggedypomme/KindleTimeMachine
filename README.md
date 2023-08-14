@@ -1,5 +1,7 @@
 # KindleTimeMachine
 
+![Kindle Time Machine](info/kindle_time_machine%20(1).jpg)
+
 The KindleTimeMachine is a set of ai generated clockfaces with a script to run them on a Kindle. This is created to go alongside my Kindlefusion project here: https://github.com/diggedypomme/Kindlefusion but can also be run standalone. I have generated an image for every minute of the day, and the clock displays this sequentially. The images were made with stable diffusion  with depth controlnet, and I will go into the settings below.These were made in May 2023, but I am just getting round to documenting. I haven't yet used it with the XL model but will give that a play.
 
 The clockfaces that I generated so far can be previewed here: https://diggedypomme.com/clockfaces/, with mixed success. I think my favourite one is the tentacle one. The html for the preview is in the preview folder.
