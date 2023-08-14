@@ -19,8 +19,11 @@ In the "kindle" folder there are 4 files.
 
 You will need to update the path to match the clock name, so like 
 
-in mayclock.sh: image_dir="/mnt/us/mayclock/anteaters"
-in simple_eips.sh : anteaters/1224.jpg or anteaters/1224.jpg
+in mayclock.sh:
+    image_dir="/mnt/us/mayclock/anteaters"
+
+in simple_eips.sh :
+    anteaters/1224.jpg or anteaters/1224.jpg
 
 ## Stable diffusion
 
