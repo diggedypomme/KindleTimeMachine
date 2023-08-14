@@ -26,6 +26,9 @@ image_dir="/mnt/us/mayclock/anteaters"
 in simple_eips.sh :
 anteaters/1224.jpg or anteaters/1224.jpg
 
+## preparing the base images
+in the source_clock_image folder there are 4 files (everyminute1-4.py). Each of these will generated a different text font and layout, and you can mess with them yourself to have it how you want
+
 ## Stable diffusion
 The images were generated based on the above clock images by using controlnet depth on the images. It was an experiment so some clockfaces turned out better than others. Reading from the metadata, the settings I used were:
 
@@ -85,12 +88,5 @@ snakes. creepy
 Negative prompt: blurry
 
 Steps: 30, Sampler: Euler a, CFG scale: 9,  Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 64, 64)"
-## Acknowledgements
 
 
-
-## Contact
-
-
-
-Happy clock-watching on your Kindle!
