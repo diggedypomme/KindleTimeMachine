@@ -30,6 +30,7 @@ anteaters/1224.jpg or anteaters/1224.jpg
 in the source_clock_image folder there are 4 files (everyminute1-4.py). Each of these will generated a different text font and layout, and you can mess with them yourself to have it how you want
 ![Base clocks](info/baseclocks.jpg)
 
+- [Pack of three base clockfaces](https://superpomme.co.uk/clockfaces/baseclocks.7z)
 
 
 ## Stable diffusion
