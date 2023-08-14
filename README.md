@@ -38,21 +38,18 @@ Steps: 50, Sampler: Euler a, CFG scale: 7.5, Size: 600x800, Model hash: 6ce01616
 
 
 human bones. creepy
-
 Negative prompt: blurry
 
 Steps: 40, Sampler: DPM++ 2M Karras, CFG scale: 9, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 64, 64)"
 
 
 steampunk clockwork. clock. greyscale. intricate
-
 Negative prompt: blurry
 
 Steps: 50, Sampler: Euler a, CFG scale: 7, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 0: "preprocessor: depth_midas, model: control_depth-fp16 [400750f6], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 0.5, 64)"
 
 
 dragons
-
 Negative prompt: blurry
 
 Steps: 32, Sampler: Euler a, CFG scale: 7, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 0: "preprocessor: depth_midas, model: control_depth-fp16 [400750f6], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 64, 64)"
@@ -60,14 +57,12 @@ Steps: 32, Sampler: Euler a, CFG scale: 7, Size: 600x800, Model hash: 6ce0161689
 
 
 fancy clock
-
 Negative prompt: blurry
 
 Steps: 45, Sampler: Euler a, CFG scale: 7.5, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 64, 64)"
 
 
 flowers
-
 Negative prompt: blurry
 
 Steps: 50, Sampler: Euler a, CFG scale: 7.5, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 64, 64)"
@@ -77,19 +72,16 @@ food photography
 Steps: 40, Sampler: Euler a, CFG scale: 7, Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 0: "preprocessor: depth_midas, model: control_depth-fp16 [400750f6], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 64, 64)"
 
 shrooms
-
 Negative prompt: blurry
 
 Steps: 32, Sampler: Euler a, CFG scale: 7,  Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 0: "preprocessor: depth_midas, model: control_depth-fp16 [400750f6], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 0.1, 0.1)"
 
 Parrots
-
 Negative prompt: blurry
 
 Steps: 45, Sampler: Euler a, CFG scale: 7.5,  Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: True, control mode: Balanced, preprocessor params: (512, 64, 64)"
 
 snakes. creepy
-
 Negative prompt: blurry
 
 Steps: 30, Sampler: Euler a, CFG scale: 9,  Size: 600x800, Model hash: 6ce0161689, Model: v1.5pruned_v1-5-pruned-emaonly, Version: v1.2.1, ControlNet 1: "preprocessor: scribble_pidinet, model: control_scribble-fp16 [c508311e], weight: 1, starting/ending: (0, 1), resize mode: Crop and Resize, pixel perfect: False, control mode: Balanced, preprocessor params: (512, 64, 64)"
