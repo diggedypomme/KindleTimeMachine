@@ -1,0 +1,1 @@
+Scripts for generating each of the images to be run through controlnet
