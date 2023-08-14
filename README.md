@@ -28,6 +28,9 @@ anteaters/1224.jpg or anteaters/1224.jpg
 
 ## preparing the base images
 in the source_clock_image folder there are 4 files (everyminute1-4.py). Each of these will generated a different text font and layout, and you can mess with them yourself to have it how you want
+![Base clocks](info/baseclocks.jpg)
+
+
 
 ## Stable diffusion
 The images were generated based on the above clock images by using controlnet depth on the images. It was an experiment so some clockfaces turned out better than others. Reading from the metadata, the settings I used were:
